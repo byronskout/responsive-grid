@@ -17,3 +17,39 @@ body{
 	letter-spacing: 1px;
 	font-family: 'Roboto', sans-serif;
 }
+
+.container {
+	display: none;
+	padding: 2rem;
+}
+
+.details {
+	position: relative;
+	z-index: 1;
+	padding: 15px;
+	background: #fff;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+	color: #828282;
+}
+
+.medium {
+	grid-row-end: span 2;
+}
+
+.large {
+	grid-row-end: span 3;
+}
+
+.full {
+	grid-column-end: auto;
+}
+
+.item:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.item:hover:after {
+	opacity: 0;
+}
