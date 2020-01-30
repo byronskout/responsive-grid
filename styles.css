@@ -1,4 +1,4 @@
-body{
+body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -45,6 +45,27 @@ body{
 	grid-column-end: auto;
 }
 
+.item {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #0c9a9a;
+	color: #fff;
+	grid-column-start: auto;
+	grid-row-start: auto;
+	color: #fff;
+}
+
 .item:hover {
 	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
@@ -72,4 +93,10 @@ body{
 	grid-auto-rows: 150px;
 	grid-auto-flow: row dense;
 	line-height: 20px;	
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		padding: 4rem;
+	}
 }
