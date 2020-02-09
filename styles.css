@@ -118,6 +118,16 @@ body {
 	opacity: 0;
 }
 
+span {
+	width: 10%;
+	margin: 20PX;
+	z-index: 10;
+	padding: 7px;
+	background: -webkit-linear-gradient(to right, #b9b5b8, #f5c7cf);
+    background: linear-gradient(to right, #b9b5b8, #f5c7cf);
+	border-radius: 50px 120px 120px;	
+}
+
 .title {
 	width: 100px;
 	margin: 20PX;
