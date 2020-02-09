@@ -23,6 +23,19 @@ body {
 	padding: 2rem;
 }
 
+@supports (display: grid) {
+	body,
+	html {
+		display: block;
+	}
+}
+
+@supports (display: grid) {
+	.message {
+		display: none;
+	}
+}
+
 .details {
 	position: relative;
 	z-index: 1;
@@ -99,4 +112,16 @@ body {
 	.container {
 		padding: 4rem;
 	}
+}
+
+@supports (display: grid) {
+	.container {
+		display: block;
+	}
+}
+
+h1 {
+	color: black;
+	font-size: 2rem;
+	margin: 0 0 1.5em;
 }
