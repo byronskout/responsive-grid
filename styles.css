@@ -124,7 +124,7 @@ span {
 	z-index: 10;
 	padding: 7px;
 	background: -webkit-linear-gradient(to right, #b9b5b8, #f5c7cf);
-    background: linear-gradient(to right, #b9b5b8, #f5c7cf);
+  background: linear-gradient(to right, #b9b5b8, #f5c7cf);
 	border-radius: 50px 120px 120px;	
 }
 
