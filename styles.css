@@ -46,6 +46,13 @@ body {
 	color: #828282;
 }
 
+.details:before {
+	font-weight: bold;
+	font-size: 1.1rem;
+	padding-right: 0.5em;
+	color: #444;
+}
+
 .medium {
 	grid-row-end: span 2;
 }
@@ -56,6 +63,13 @@ body {
 
 .full {
 	grid-column-end: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.full {
+		grid-column: 1/-1;
+		grid-row-end: span 2;
+	}
 }
 
 .item {
@@ -88,6 +102,36 @@ body {
 	opacity: 0;
 }
 
+.title {
+	width: 100px;
+	margin: 20PX;
+	z-index: 10;
+	padding: 7px;
+	background: #9d50bb;
+	background: -webkit-linear-gradient(to right, #6e48aa, #9d50bb);
+	border-radius: 50px 120px 120px;
+}
+
+.title-2 {
+	width: 16%;
+	margin: 20PX;
+	z-index: 10;
+	padding: 7px;
+	background: #50c9c3;
+	background: -webkit-linear-gradient(to right, #96deda, #50c9c3);
+	background: linear-gradient(to right, #96deda, #50c9c3);
+}
+
+.title-3 {
+	width: 24%;
+	margin: 20PX;
+	z-index: 10;
+	padding: 7px;
+	background: #24c6dc;
+	background: -webkit-linear-gradient(to right, #514a9d, #24c6dc);
+	background: linear-gradient(to right, #514a9d, #24c6dc);
+}
+
 .item:after {
 	content: '';
 	position: absolute;
@@ -105,7 +149,7 @@ body {
 	grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
 	grid-auto-rows: 150px;
 	grid-auto-flow: row dense;
-	line-height: 20px;	
+	line-height: 20px;
 }
 
 @media screen and (min-width: 768px) {
